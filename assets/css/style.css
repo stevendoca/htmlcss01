@@ -48,16 +48,25 @@ a {
   opacity: 0.9;
 }
 /* Header */
-.header {
+.fixed-header {
+  background: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+.hero-wrapper {
   background: #e6f0ff;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding-top: 12px 0;
 }
 
 .navbar ul {
@@ -161,9 +170,9 @@ a {
   margin-top: 70px;
 }
 
-.clients .logo-customer a{
+.clients .logo-customer a {
   padding: 0px 42px;
-  height:90px;
+  height: 90px;
   display: flex;
   align-items: center;
   border-radius: 12px;
